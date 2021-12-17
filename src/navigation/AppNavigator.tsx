@@ -14,6 +14,7 @@ import Adventures from '../screens/Adventures';
 import Income from '../screens/Income';
 import BackButtonHeader from '../components/BackButtonHeader';
 import Register from '../screens/Register';
+import LogoutButton from '../components/LogoutButton';
 
 const Stack = createStackNavigator<RootStackParamList>();
 const BottomTab = createBottomTabNavigator<TabStackParamList>();
@@ -38,6 +39,23 @@ export default function AppNavigator() {
       <NavigationContainer>
         <Stack.Navigator
         >
+          <Stack.Screen 
+            name="Home" 
+            component={Home} 
+            options={{
+              headerShown: true,
+              headerStyle: {
+                backgroundColor: '#000D16',
+                shadowOpacity: 0,
+              },
+              headerRight: () => (
+                <LogoutButton />
+              ),
+              headerTitleStyle: {
+                display:'none'
+              }
+            }}
+          />
           <Stack.Screen name="Welcome"
             options={{
               headerShown: false,

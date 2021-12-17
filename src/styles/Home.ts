@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
         fontSize: 35,
         fontStyle: 'normal',
         fontWeight: 'normal',
-        bottom: height * 0.15,
+        bottom: height * 0.05,
         color: 'white',
     }
 });

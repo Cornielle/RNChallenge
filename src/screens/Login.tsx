@@ -27,7 +27,7 @@ const loginValidationSchema = yup.object().shape({
 
 
 export default function Login() {
-  const navigation = useNavigation<WelcomeProp>();
+  const navigation = useNavigation<HomeProp>();
   const [emailErrorMsg, setEmailErrorMsg] = React.useState('');
   const [visible, setVisible] = React.useState(false);
   const toggleOverlay = () => {
@@ -40,12 +40,12 @@ export default function Login() {
         onSubmit={
             values => {     
                 if(values.password.toLowerCase() !== dummyLoginData.password) {
-                        setVisible(true)
-                    } else if(values.email.toLowerCase() !== dummyLoginData.email) {
-                        setEmailErrorMsg('The email entered is not registered');
-                    } else {
-                        navigation.navigate('Welcome');
-                    }
+                    setVisible(true)
+                } else if(values.email.toLowerCase() !== dummyLoginData.email) {
+                    setEmailErrorMsg('The email entered is not registered');
+                } else {
+                    navigation.navigate('Home');
+                }
             }
         }
         validationSchema={loginValidationSchema}
