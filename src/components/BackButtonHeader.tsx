@@ -11,7 +11,7 @@ export default function BackButtonHeader() {
                 paddingLeft:20,
                 paddingTop:14,
             }}
-            size={32}
+            size={35}
             tvParallaxProperties={undefined} 
             onPress={()=>{navigation.goBack()}}               
       />

@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
         fontSize: normalize(35),
         fontStyle: 'normal',
         fontWeight: 'normal',
-        bottom: height * 0.15,
+        bottom: height * 0.25,
         color: 'white',
     },
     button: {
