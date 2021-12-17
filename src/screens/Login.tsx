@@ -8,7 +8,6 @@ import {Formik} from 'formik';
 import * as yup from 'yup';
 import { Overlay } from 'react-native-elements/dist/overlay/Overlay';
 import { HomeProp } from '../types/Home';
-import { WelcomeProp } from '../types/Welcome';
 
 const dummyLoginData = {
     email: "hello@gmail.com",
