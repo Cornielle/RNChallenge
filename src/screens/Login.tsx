@@ -7,7 +7,7 @@ import InputComponent from '../components/Input';
 import {Formik} from 'formik';
 import * as yup from 'yup';
 import { Overlay } from 'react-native-elements/dist/overlay/Overlay';
-import { HomeProp } from '../types/Home';
+import { RegisterProp } from '../types/Register';
 
 const dummyLoginData = {
     email: "hello@gmail.com",
@@ -26,7 +26,7 @@ const loginValidationSchema = yup.object().shape({
 
 
 export default function Login() {
-  const navigation = useNavigation<HomeProp>();
+  const navigation = useNavigation<RegisterProp>();
   const [emailErrorMsg, setEmailErrorMsg] = React.useState('');
   const [visible, setVisible] = React.useState(false);
   const toggleOverlay = () => {
@@ -128,7 +128,6 @@ export default function Login() {
                             title="Try Again"
                             titleStyle={LoginStyles.styles.buttonTitle}
                             onPress={toggleOverlay}
-                            
                         />
                     </Overlay>
                 </View>

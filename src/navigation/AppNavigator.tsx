@@ -37,8 +37,13 @@ export default function AppNavigator() {
   return (
     <>
       <NavigationContainer>
-        <Stack.Navigator
-        >
+        <Stack.Navigator>
+        <Stack.Screen name="Welcome"
+            options={{
+              headerShown: false,
+            }}
+            component={Welcome} 
+          />
           <Stack.Screen 
             name="Home" 
             component={Home} 
@@ -55,12 +60,6 @@ export default function AppNavigator() {
                 display:'none'
               }
             }}
-          />
-          <Stack.Screen name="Welcome"
-            options={{
-              headerShown: false,
-            }}
-            component={Welcome} 
           />
           <Stack.Screen 
             name="LoginSignUp"
