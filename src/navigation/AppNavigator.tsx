@@ -15,9 +15,17 @@ import Income from '../screens/Income';
 import BackButtonHeader from '../components/BackButtonHeader';
 import Register from '../screens/Register';
 import LogoutButton from '../components/LogoutButton';
+import { Image } from 'react-native-elements';
 
 const Stack = createStackNavigator<RootStackParamList>();
 const BottomTab = createBottomTabNavigator<TabStackParamList>();
+
+/* Custom Icons*/
+
+const homeImg =  "../assets/images/home.png";
+const adventuresImg =  "../assets/images/adventures.png";
+const libraryImg =  "../assets/images/library.png";
+const incomeImg =  "../assets/images/income.png";
 
 export function TabNavigator(){
   return(
@@ -42,8 +50,17 @@ export function TabNavigator(){
             backgroundColor: '#000D16',
             shadowOpacity: 0,
             borderTopColor: '#000D16',
+          },
+          tabBarIcon: () => {
+            return (
+              <Image
+                style={{ width: 23, height: 20 }}
+                source={require(`${homeImg}`)}
+              />
+            );
           }
-        }}
+        }
+      }
       />
       <BottomTab.Screen 
         name="Income" 
@@ -65,6 +82,14 @@ export function TabNavigator(){
             backgroundColor: '#000D16',
             shadowOpacity: 0,
             borderTopColor: '#000D16',
+          },
+          tabBarIcon: () => {
+            return (
+              <Image
+                style={{ width: 23, height: 20 }}
+                source={require(`${incomeImg}`)}
+              />
+            );
           }
         }}
       />
@@ -88,6 +113,14 @@ export function TabNavigator(){
             backgroundColor: '#000D16',
             shadowOpacity: 0,
             borderTopColor: '#000D16',
+          },
+          tabBarIcon: () => {
+            return (
+              <Image
+                style={{ width: 23, height: 20 }}
+                source={require(`${adventuresImg}`)}
+              />
+            );
           }
         }}
        />
@@ -111,6 +144,14 @@ export function TabNavigator(){
             backgroundColor: '#000D16',
             shadowOpacity: 0,
             borderTopColor: '#000D16',
+          },
+          tabBarIcon: () => {
+            return (
+              <Image
+                style={{ width: 23, height: 20 }}
+                source={require(`${libraryImg}`)}
+              />
+            );
           }
         }}
       />
