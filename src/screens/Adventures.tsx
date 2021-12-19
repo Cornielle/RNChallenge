@@ -8,11 +8,9 @@ export default function Adventures() {
 
   return (
         <View style={HomeStyles.styles.container}>
-            <View style={HomeStyles.styles.inputContainer}>
-                <Text style={HomeStyles.styles.title}> 
-                    Adventures
-                </Text>
-            </View>
+            <Text style={HomeStyles.styles.title}> 
+                Adventures
+            </Text>
         </View>
         );
     }
