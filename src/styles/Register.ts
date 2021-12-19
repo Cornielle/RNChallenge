@@ -29,15 +29,16 @@ export const styles = StyleSheet.create({
         color: 'white',
     },
     button: {
-        top: height * 0.02,
-        width: width * 0.8,
-        height: height * 0.07,
+        top: height * 0.01,
+        left: width * 0.02,
+        width: width * 0.74,
+        height: height * 0.08,
         backgroundColor: '#91C15F',
         borderRadius: 5,
     },
     buttonTitle: {
         fontWeight: 'bold',
-        fontSize: 20,
+        fontSize: normalize(20),
     },
     bottomText: {
         fontSize: 16,
