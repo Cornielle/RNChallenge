@@ -19,6 +19,7 @@ export const styles = StyleSheet.create({
         color: 'white',
     },
     titleLogout:{
+        padding: 25,
         top: height * 0.05,
         textAlign: 'center',
         fontSize: normalize(16),

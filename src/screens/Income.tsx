@@ -8,7 +8,7 @@ export default function Income() {
   return (
     <View style={HomeStyles.styles.container}>
         <Text style={HomeStyles.styles.title}> 
-            Home
+            Income
         </Text>
     </View>
     );

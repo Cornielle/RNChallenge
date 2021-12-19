@@ -43,7 +43,7 @@ export default function Login() {
                 } else if(values.email.toLowerCase() !== dummyLoginData.email) {
                     setEmailErrorMsg('The email entered is not registered');
                 } else {
-                    navigation.navigate('Home');
+                    navigation.navigate('TabHome');
                 }
             }
         }

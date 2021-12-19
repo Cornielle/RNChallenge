@@ -9,7 +9,7 @@ export default function Library() {
   return (
         <View style={HomeStyles.styles.container}>
             <Text style={HomeStyles.styles.title}> 
-                Income
+                Library
             </Text>
         </View>
         );
