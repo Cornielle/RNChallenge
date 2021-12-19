@@ -8,11 +8,6 @@ import {Formik} from 'formik';
 import * as yup from 'yup';
 import { LoginProp } from '../types/Login';
 
-const dummyLoginData = {
-    email: "hello@gmail.com",
-    password: "blakbleu.1"
-}
-
 /*Yum Schema*/
 const loginValidationSchema = yup.object().shape({
     email: yup.string()
@@ -30,10 +25,8 @@ const loginValidationSchema = yup.object().shape({
     })
 })
 
-
 export default function Register() {
   const navigation = useNavigation<LoginProp>();
-  const [emailErrorMsg, setEmailErrorMsg] = React.useState('');
   const [visible, setVisible] = React.useState(false);
   const toggleOverlay = () => {
     setVisible(!visible);

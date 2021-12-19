@@ -6,10 +6,10 @@ import { Home as HomeStyles } from '../styles';
 export default function Home() {
 
   return (
-        <View style={HomeStyles.styles.container}>
-            <Text style={HomeStyles.styles.title}> 
-                Home
-            </Text>
-        </View>
-        );
-    }
+    <View style={HomeStyles.styles.container}>
+        <Text style={HomeStyles.styles.title}> 
+            Home
+        </Text>
+    </View>
+    );
+}
